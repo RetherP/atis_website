@@ -1,27 +1,28 @@
-.navbar-textcolor{
+.navbar-text{
     color: black;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    display:block;
+    display:inline-block;
     background: linear-gradient(to left, white 50%, rgb(65, 184, 184) 50%)right;
     background-size:200%;
+    background-position-y: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     transition: .5s ease-out;
+    margin: auto;
 }
-.navbar-textcolor:hover{
+.navbar-text:hover{
     background-position: left;
 }
 .navbar-custom{
     background-color: rgb(255, 255, 255);
     width: 700px;
-    text-align: center;
+    height: 60px;
+    opacity: 0.9;
+
 }
-.navbarimg{
-    height: 50px;
-    width: 50px;
-    float: left;
+.navbarimg {
+    height: 50px; 
     text-align: left;
+    margin-top: -5px;
 }
 .navbarbg{
     background-size: cover;
@@ -35,41 +36,54 @@
     background-size: 100%;
     height: 700px;
 }
-a {
+.navbar-toggle{
+    visibility:hidden;
+    text-align: right;
+    
+}
+a.navbar-text{
+    text-decoration: none; 
+    color: black;
+    height: 50px;
+    padding-top:10px
+}
+
+.animation {
     text-decoration: none;
     color: black; 
+    text-align: left;
+
   }
-  a:active{
+  .animation:active{
       color:black;
   }
-  a:visited{
+  .animation:visited{
       color:black;
   }
   
-  a:hover {
+  .animation:hover {
     text-decoration: none;
     color: black; 
   }
   
-  a {
+  .animation{
     text-decoration: none;
     position: relative;
     color: black; 
   }
   
-  a:after {
-    border-radius: 1em;
-    border-top: .15em solid rgb(5,5,5);
-    content: "";
+  .animation:after {
+    border-radius: 0.5em;
+    border-top: .25em solid rgb(5,5,5);
     position: absolute;
       right: 100%;
-      bottom: 0.09em;
+      bottom: 0.1em;
       left: 0; 
     transition: right 1s ease-in-out 0.01s;
     color: black; 
   }
   
-  a:hover:after {
+  .animation:hover:after {
     right: 0;
     color: black
   }
@@ -79,14 +93,38 @@ a {
     .navbarbg{
         height: 500px;
     }
+    .navbar-toggle{
+        visibility:visible;
+    }
+    .navbar-custom{
+        width: 300px;
+        text-align: left;
+    }
+
 }
 @media only screen and (max-width:500px){
     .navbarbg{
         height: 400px;
     }
+    .navbar-custom{
+        width: 400px;
+    }
 }
 @media only screen and (min-width: 1920px){
     .navbarbg{
-        height: 800px;
+        height: 700px;
     }
+    .navbar-brand{
+        text-align: left;
+        float: left;
+    }
+    .navbar-custom{
+        background-color: rgb(255, 255, 255);
+        width: 700px;
+        height: 50px;
+    }
+    .navbar-text{
+        height: 50px;
+    }
+    
 }
