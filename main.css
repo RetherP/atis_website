@@ -89,7 +89,7 @@ a.navbar-text{
   }
 
 
-@media only screen and (max-width:1100px){
+@media only screen and (max-width:1099.01px){
     .navbarbg{
         height: 500px;
     }
@@ -97,7 +97,7 @@ a.navbar-text{
         visibility:visible;
     }
     .navbar-custom{
-        width: 300px;
+        width: 700px;
         text-align: left;
     }
 
@@ -107,7 +107,20 @@ a.navbar-text{
         height: 400px;
     }
     .navbar-custom{
-        width: 400px;
+        width: 700px;
+        text-align: left;
+    }
+    .navbar-toggle{
+        visibility:visible;
+    }
+}
+@media only screen and (min-width: 1099.02px){
+    .navbar-brand{
+        text-align: left;
+        float: left;
+    }
+    .navbar-custom{
+        height: 50px;
     }
 }
 @media only screen and (min-width: 1920px){
